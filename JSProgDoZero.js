@@ -1,4 +1,4 @@
-// Exercícios - Curso Fundamentos de Programação 1
+// Exercícios - Curso Fundamentos de Programação 1..
 
 
 /*** Pág 01 ***/
