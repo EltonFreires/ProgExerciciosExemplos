@@ -281,38 +281,40 @@ console.log(filtrarNumeros(["a", "c"])); */
 
 /*** Pág 07 ***/
 
-/* // Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, em que cada
-// elemento é um array formado pelos pares chave/valor que corresponde a um atributo do objeto. 
-// Observe os exemplos abaixo para um melhor entendimento:
+// Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
 // Exemplos:
 // objetoParaArray({   nome: "Maria", profissao: "Desenvolvedora de software"}) // irá retornar [["nome", "Maria"], ["profissao", "Desenvolvedora de Software"]]
 // objetoParaArray({   codigo: 11111, preco: 12000}) // irá retornar [["codigo", 11111], ["preco", 12000]]
-function objetoParaArray(objeto){
-    let arr = [];
-    for (let chave in objeto){
-        arr.push(chave, objeto[chave]);
-    }
-    return arr;
-}
-function objetoParaArray(objeto){
-    let chave = Object.keys(objeto);
-    return chave.map(chave => [chave, objeto[chave]]);
-}
-function objetoParaArray(objeto){
-    return Object.entries(objeto);
-}
+// function objetoParaArray(objeto){
+//     let arr = [];
+//     for (let chave in objeto){ arr.push(chave, objeto[chave]); }
+//     return arr;
+// }
+// function objetoParaArray(objeto){
+//     let chave = Object.keys(objeto);
+//     return chave.map(chave => [chave, objeto[chave]]);
+// }
+// function objetoParaArray(objeto){
+//     return Object.entries(objeto);
+// }
+// 1 solução, fazer com for, e apartir da chave pegar o valor
+// 2 solução, extrair as chaves, e apartir das chaves pegar o valor
+// 3 solução, extrair tudo de uma vez
 console.log(objetoParaArray({ nome: "Maria", profissao: "Desenvolvedora de software" }));
-console.log(objetoParaArray({ codigo: 11111, preco: 12000 })); */
+console.log(objetoParaArray({ codigo: 11111, preco: 12000 }));
 
 
 
-// Elabore uma função que receba um array de números e retorne um array que tenha todos os números que são pares e que também tenham índices pares.
+/* // Elabore uma função que receba um array de números e retorne um array que tenha todos os números que são pares e que também tenham índices pares.
 // Lembre-se que um número é par porque é divisível por 2, ou seja, o resto da divisão da divisão dele por 2 é zero.
 // Exemplos:
 // receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]) // retornará []
 // receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]) // retornará [10, 22]
-
-
+function receberSomenteOsParesDeIndicesPares(obj){
+    return obj.filter((value, index) => value % 2 === 0 && index % 2 === 0);
+}
+console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));
+console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 
 
 
