@@ -281,7 +281,7 @@ console.log(filtrarNumeros(["a", "c"])); */
 
 /*** Pág 07 ***/
 
-// Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
+/* // Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
 // Exemplos:
 // objetoParaArray({   nome: "Maria", profissao: "Desenvolvedora de software"}) // irá retornar [["nome", "Maria"], ["profissao", "Desenvolvedora de Software"]]
 // objetoParaArray({   codigo: 11111, preco: 12000}) // irá retornar [["codigo", 11111], ["preco", 12000]]
@@ -301,7 +301,7 @@ console.log(filtrarNumeros(["a", "c"])); */
 // 2 solução, extrair as chaves, e apartir das chaves pegar o valor
 // 3 solução, extrair tudo de uma vez
 console.log(objetoParaArray({ nome: "Maria", profissao: "Desenvolvedora de software" }));
-console.log(objetoParaArray({ codigo: 11111, preco: 12000 }));
+console.log(objetoParaArray({ codigo: 11111, preco: 12000 })); */
 
 
 
