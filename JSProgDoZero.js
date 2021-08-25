@@ -3,12 +3,12 @@
 
 /*** Pág 01 ***/
 
-/* // Crie uma função que retorna a string "Olá, " concatenada com um argumento text (a ser passado para a
+// Crie uma função que retorna a string "Olá, " concatenada com um argumento text (a ser passado para a
 // função) e com ponto de exclamação "!" no final.
 // Exemplos:
 // cumprimentar("Leonardo") // retornará "Olá, Leonardo!"
 // cumprimentar("Maria") // retornará "Olá, Maria!"
-function cumprimentar(nomePessoa){
+/* function cumprimentar(nomePessoa){
     return `"Olá, ${nomePessoa}!"`;
 }
 console.log(cumprimentar("Leonardo"));
@@ -21,13 +21,13 @@ console.log(cumprimentar2("Maria")); */
 
 
 
-/* // Escreva uma função que receba a idade de uma pessoa em anos e retorne a mesma idade em dias.
+// Escreva uma função que receba a idade de uma pessoa em anos e retorne a mesma idade em dias.
 // Obs: considere que um ano tem 365 dias. Desconsidere anos bissextos (com 366 dias) e
 // desconsidere também dias decorridos desde o último aniversário.
 // Exemplos:
 // converterIdadeEmAnosParaDias(25) // retornará 9125
 // converterIdadeEmAnosParaDias(70) // retornará 25550
-function converterIdadeEmAnosParaDias(idade){
+/* function converterIdadeEmAnosParaDias(idade){
     const diasPorAno = 365;
     return (idade * diasPorAno).toFixed(0);
 
@@ -37,7 +37,7 @@ console.log(converterIdadeEmAnosParaDias(70)); */
 
 
 
-/* // Desenvolva uma função que recebe dois parâmetros, um é a quantidade de horas trabalhadas por um funcionário
+// Desenvolva uma função que recebe dois parâmetros, um é a quantidade de horas trabalhadas por um funcionário
 // num mês, e o quanto ele recebe por hora. A função deverá calcular o salário líquido mensal do funcionário, que é
 // da quantidade de horas trabalhadas no mês multiplicada pelo valor da sua hora. Desse valor, deve ser subtraído
 // 30%, relativo a impostos.
@@ -45,7 +45,7 @@ console.log(converterIdadeEmAnosParaDias(70)); */
 // no mês.
 // Exemplos:
 // calcularSalarioLiquido(180, 60) // retornará "Salário igual a R$ 7560"
-function calcularSalarioBruto(horasTrabalhadas, valorHora){
+/* function calcularSalarioBruto(horasTrabalhadas, valorHora){
     return (horasTrabalhadas * valorHora).toFixed(2);
 }
 function calcularSalarioLiquido(horasTrabalhadas, valorHora){
@@ -57,39 +57,36 @@ console.log(calcularSalarioLiquido(180, 60)); */
 
 /*** Pág 02 ***/
 
-/* // Crie uma função que recebe um número (de 1 a 12 e retorne o mês correspondente como uma string. Por
+// Crie uma função que recebe um número (de 1 a 12 e retorne o mês correspondente como uma string. Por
 // exemplo, se a entrada for 2, a função deverá retornar "fevereiro", pois este é o 2° mês.
 // Exemplos:
 // receberNomeDoMes(1) // retornará "janeiro"
 // receberNomeDoMes(4) // retornará "abril"
+/* // function receberNomeDoMes(mes) {
+//     switch (mes) {
+//         case 1: return "Janeiro";
+//         case 1: return "Fevereiro";
+//         case 1: return "Março";
+//         case 4: return "Abril";
+//         default:
+//             break;
+//     }
+// }
 function receberNomeDoMes(mes) {
-    switch (mes) {
-        case 1: return "Janeiro";
-        case 1: return "Fevereiro";
-        case 1: return "Março";
-        case 4: return "Abril";
-        default:
-            break;
-    }
-}
-function receberNomeDoMes2(mes) {
     const mesesAno = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'] ;
     return mesesAno[--mes];
 }
 console.log(receberNomeDoMes(1));
-console.log(receberNomeDoMes(4));
-console.log(receberNomeDoMes2(1));
-console.log(receberNomeDoMes2(4));
- */
+console.log(receberNomeDoMes(4)); */
 
 
 
-/* // Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo. Deverá diferenciar números de strings.
+// Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo. Deverá diferenciar números de strings.
 // Exemplos:
 // maiorOuIgual(0, 0) // retornará true
 // maiorOuIgual(0, "0") // retornará false
 // maiorOuIgual(5, 1) // retornará true
-function maiorOuIgual(valor1, valor2){
+/* function maiorOuIgual(valor1, valor2){
     if(typeof valor1 === "string" || typeof valor2 === "string")
         return false;
     else if (valor2 > valor1) {
@@ -101,14 +98,13 @@ console.log(maiorOuIgual(0,0));
 console.log(maiorOuIgual(5,1));
 console.log(maiorOuIgual(2,5));
 console.log(maiorOuIgual(0,"0"));
-console.log(maiorOuIgual("0",0));
- */
+console.log(maiorOuIgual("0",0)); */
 
 
 
 /*** Pág 03 ***/
 
-/* // Escreva uma função que receba um valor booleano ou numérico. Se o parâmetro fornecido for booleano, o retorno da função deverá ser o inverso. Por exemplo, se a entrada for false, retornará true. 
+// Escreva uma função que receba um valor booleano ou numérico. Se o parâmetro fornecido for booleano, o retorno da função deverá ser o inverso. Por exemplo, se a entrada for false, retornará true. 
 // Se o parâmetro for numérico, o retorno será o número inverso. Por exemplo, se for fornecido 1, o retorno será -1. 
 // Se o parâmetro de entrada não for de nenhum dos tipo acima, retorne "booleano ou número esperados, mas o parâmetro é do tipo
 // Exemplos:
@@ -116,8 +112,7 @@ console.log(maiorOuIgual("0",0));
 // inverso("6") // retornará "booleano ou número esperados, mas o parâmetro é do tipo string"
 // inverso(-2000) // retornará 2000
 // inverso("programação") // retornará "booleano ou números, mas o parâmetro é do tipo string"
-
-function inverso(valor){
+/* function inverso(valor){
     if (typeof valor === "boolean") {
         return !valor;
     }
@@ -133,7 +128,7 @@ console.log(inverso("programação")); */
 
 
 
-/* // Crie uma função que receba quatro números como parâmetro (minimo, maximo, numero, inclusivo) e retorne se o parâmetro numero (o primeiro) está entre minimo e maximo. 
+// Crie uma função que receba quatro números como parâmetro (minimo, maximo, numero, inclusivo) e retorne se o parâmetro numero (o primeiro) está entre minimo e maximo. 
 // Quando o parâmetro inclusivo for true, tenha "entre" como inlusivo, ou seja, considerando se numero é igual a minimo ou a maximo. 
 // Caso o parâmetro inclusivo não seja informado, seu valor padrão deverá ser false, portanto, a lógica será exclusiva, não considerando se numero é igual a minimo ou a maximo.
 // Exemplos:
@@ -141,7 +136,7 @@ console.log(inverso("programação")); */
 // estaEntre(16, 100, 160) // retornará false
 // estaEntre(3, 150, 3) // retornará false
 // estaEntre(3, 150, 3, true) // retornará true
-function estaEntre(minimo, maximo, numero, inclusivo){
+/* function estaEntre(minimo, maximo, numero, inclusivo){
     if (numero > minimo && numero < maximo || (inclusivo && (numero === minimo || numero === maximo ))) {
         return true;
     }
@@ -267,11 +262,11 @@ console.log(removerPropriedade({id: 20, nome: "caneta", descricao: "Não preench
 
 
 
-/* // Crie uma função que receba um array de elementos e retorne um array somente com os números presentes no array recebido como parâmetro.
+// Crie uma função que receba um array de elementos e retorne um array somente com os números presentes no array recebido como parâmetro.
 // Exemplos:
 // filtrarNumeros(["Javascript", 1, "3", "Web", 20]) // retornará [1, 20]
 // filtrarNumeros(["a", "c"]) // retornará []
-function filtrarNumeros(arr){
+/* function filtrarNumeros(arr){
     return arr.filter(el => typeof el === "number");
 }
 console.log(filtrarNumeros(["Javascript", 1, "3", "Web", 20]));
@@ -281,11 +276,11 @@ console.log(filtrarNumeros(["a", "c"])); */
 
 /*** Pág 07 ***/
 
-/* // Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
+// Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
 // Exemplos:
 // objetoParaArray({   nome: "Maria", profissao: "Desenvolvedora de software"}) // irá retornar [["nome", "Maria"], ["profissao", "Desenvolvedora de Software"]]
 // objetoParaArray({   codigo: 11111, preco: 12000}) // irá retornar [["codigo", 11111], ["preco", 12000]]
-// function objetoParaArray(objeto){
+/* // function objetoParaArray(objeto){
 //     let arr = [];
 //     for (let chave in objeto){ arr.push(chave, objeto[chave]); }
 //     return arr;
@@ -305,12 +300,12 @@ console.log(objetoParaArray({ codigo: 11111, preco: 12000 })); */
 
 
 
-/* // Elabore uma função que receba um array de números e retorne um array que tenha todos os números que são pares e que também tenham índices pares.
+// Elabore uma função que receba um array de números e retorne um array que tenha todos os números que são pares e que também tenham índices pares.
 // Lembre-se que um número é par porque é divisível por 2, ou seja, o resto da divisão da divisão dele por 2 é zero.
 // Exemplos:
 // receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]) // retornará []
 // receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]) // retornará [10, 22]
-function receberSomenteOsParesDeIndicesPares(obj){
+/* function receberSomenteOsParesDeIndicesPares(obj){
     return obj.filter((value, index) => value % 2 === 0 && index % 2 === 0);
 }
 console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));
@@ -319,6 +314,39 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 
 
 /*** Pág 08 ***/
+
+// Para determinar se um ano é bissexto, é necessário saber se ele é multiplo de 4. Não pode ser múltiplo de 100, exceto se for também múltiplo de 400.
+// Com isso em mente, desenvolva uma função que recebe um número correspondente a um ano e retorna se ele é bissexto ou não.
+// Exemplos:
+// checarAnoBissexto(2020) // retornará true
+// checarAnoBissexto(2100) // retornará false, pois é múltiplo de 100 e não é múltiplo de 400
+/* // function checarAnoBissexto(ano){
+//     return ano % 4 === 0 && (ano % 100 !== 0 || ano % 400 === 0);
+// }
+function checarAnoBissexto(ano){
+    return new Date(ano, 1,29).getDate() === 29;
+}
+console.log(checarAnoBissexto(2020));
+console.log(checarAnoBissexto(2100)); */
+
+
+
+// Escreva uma função que receba um array de números e retornará a soma de todos os números desse array.
+// Exemplos:
+// somarNumeros([10, 10, 10]) // retornará 30
+// somarNumeros([15, 15, 15, 15]) // retornará 60
+/* // function somarNumeros(arrNumeros){
+//     let soma = 0;
+//     arrNumeros.forEach(element => { soma += element});
+//     return soma;
+// }
+function somarNumeros(arrNumeros){
+   
+    return arrNumeros.reduce((soma, value) => soma + value, 0);
+}
+console.log(somarNumeros([10, 10, 10]));
+console.log(somarNumeros([15, 15, 15, 15])); */
+
 /*** Pág 09 ***/
 /*** Pág 10 ***/
 /*** Pág 11 ***/
@@ -335,74 +363,6 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 
 
 // **************************************************************************************************
-// Elabore uma função que receba um array de números e retorne um array que tenha todos os números que são
-// pares e que também tenham índices pares.
-// 💡 Lembre-se que um número é par porque é divisível por 2, ou seja, o resto da divisão da divisão dele por
-// 2 é zero.
-// Exemplos:
-// receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]) // retornará []
-// receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]) // retornará [10, 22]
-// Resoluções - Exercícios - Curso Fundamentos de Programação 8
-// Resolução 1
-// function receberSomenteOsParesDeIndicesPares(numeros) {
-// let resultado = []
-// for(let i = 0; i < numeros.length; i += 2){
-// const numeroPar = numeros[i] % 2 === 0
-// if(numeroPar)
-// resultado.push(numeros[i])
-// }
-// return resultado
-// }
-// Resolução 2
-// function receberSomenteOsParesDeIndicesPares(numeros) {
-// return numeros.filter((numero, indice) => {
-// const numeroPar = numero % 2 === 0
-// const indicePar = indice % 2 === 0
-// return numeroPar && indicePar
-// })
-// }
-// A fim de manter o calendário anual ajustado com o movimento de translação da Terra, criou-se os anos bissextos,
-// que têm 366 dias em vez dos 365 presentes nos anos normais.
-// Para determinar se um ano é bissexto, é necessário saber se ele é multiplo de 4. Não pode ser múltiplo de 100,
-// exceto se for também múltiplo de 400.
-// Com isso em mente, desenvolva uma função que recebe um número correspondente a um ano e retorna se ele é
-// bissexto ou não.
-// Exemplos:
-// checarAnoBissexto(2020) // retornará true
-// checarAnoBissexto(2100) // retornará false, pois é múltiplo de 100 e não é múltiplo de 400
-// Resolução 1
-// function checarAnoBissexto(ano) {
-// const divisivelPorQuatro = ano % 4 == 0
-// const divisivelPorCem = ano % 100 == 0
-// const divisivelPorQuatrocentos = ano % 400 == 0
-// return (divisivelPorQuatro && !divisivelPorCem) || divisivelPorQuatrocentos
-// }
-// Resolução 2
-// // checa-se indiretamente, verificando se o mês de fevereiro do dado ano tem 29 dias
-// function checarAnoBissexto(ano) {
-// return new Date(ano, 1, 29).getDate() === 29;
-// }
-// Escreva uma função que receba um array de números e retornará a soma de todos os números desse array.
-// Exemplos:
-// somarNumeros([10, 10, 10]) // retornará 30
-// somarNumeros([15, 15, 15, 15]) // retornará 60
-// Resolução 1
-// Resoluções - Exercícios - Curso Fundamentos de Programação 9
-// function somarNumeros(numeros) {
-// const quantidadeDeNumeros = numeros.length
-// return (quantidadeDeNumeros === 0) ? 0 : numeros[0] + somarNumeros(numeros.slice(1))
-// }
-// Resolução 2
-// function somarNumeros(numeros) {
-// let soma = 0
-// numeros.forEach(numero => soma += numero)
-// return soma
-// }
-// Resolução 3
-// function somarNumeros(numeros) {
-// const soma = numeros.reduce( (acumulador, numeroAtual) => acumulador + numeroAtual, 0)
-// return soma
-// }
 // Você está trabalhando numa aplicação pessoal de controle de despesas. Na tela principal dessa aplicação, é
 // possível adicionar produtos ou serviços, informando nome, categoria e preço. Uma funcionalidade que você está
 // desenvolvendo no momento é a de somar o total das despesas.
@@ -674,24 +634,3 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 // const melhorEstudante = estudantesOrdenados[0]
 // return melhorEstudante
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
