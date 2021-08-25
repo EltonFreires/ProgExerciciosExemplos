@@ -12,7 +12,6 @@
     return `"Olá, ${nomePessoa}!"`;
 }
 console.log(cumprimentar("Leonardo"));
-
 function cumprimentar2(nomePessoa){
     const textoSaudacao = "Olá";
     return [textoSaudacao, nomePessoa].join(', ').concat('!');
@@ -30,7 +29,6 @@ console.log(cumprimentar2("Maria")); */
 /* function converterIdadeEmAnosParaDias(idade){
     const diasPorAno = 365;
     return (idade * diasPorAno).toFixed(0);
-
 }
 console.log(converterIdadeEmAnosParaDias(25));
 console.log(converterIdadeEmAnosParaDias(70)); */
@@ -159,7 +157,6 @@ function multiplicar(num1, num2){
     const maiorNum = Math.max(num1, num2);
     const menorNum = Math.min(num1, num2);
     let total = 0;
-
     if (!(num1 === 0 || num2 === 0)) {
         for (let i = 0; i < menorNum; i++) {
             total += maiorNum;        
@@ -225,7 +222,6 @@ console.log(simboloMais3(4)); */
 // Exemplos:
 // receberPrimeiroEUltimoElemento([7,14,"olá"]) // retornará [7, "olá"]
 // receberPrimeiroEUltimoElemento([-100, "aplicativo", 16]) // retornará [-100, 16]
-
 // function receberPrimeiroEUltimoElemento(elementos){
 //     let a = [elementos[0], elementos[elementos.length - 1]];
 //     return a;
