@@ -30,7 +30,26 @@ function somarNumeros(arrNumeros){
     return arrNumeros.reduce((soma, value) => soma + value, 0);
 } */
 
+
+// 04
+// function despesasTotais(produtos) {
+//     let soma = 0;
+//     for (let obj of produtos) {
+//         soma += obj.preco;
+//     }    
+//     return soma;
+// }
+// function despesasTotais(produtos){
+//     return produtos.map(item => item.preco).reduce((acumulador, value) => acumulador += value,0);
+// }
+// function despesasTotais(produtos){
+//     return produtos.reduce((acumulador, value) => acumulador += value.preco,0);
+// }
+
 // **************************************************************************************************
+
+
+
 
 // 01
 // Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
@@ -67,3 +86,18 @@ function somarNumeros(arrNumeros){
 console.log(somarNumeros([]));
 console.log(somarNumeros([10, 10, 10]));
 console.log(somarNumeros([15, 15, 15, 15]));
+
+// 04
+// Crie uma função que receba um array de produtos e retorne o total das despesas.
+// despesasTotais([ {nome: "Jornal online", categoria: "Informação", preco: 89.99},{nome: "Cinema", categoria: "Entretenimento", preco: 150} ]) // retornará 239.99
+// despesasTotais([ {nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99},{nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90} ]) // retornará 34599.89
+// 1 for of
+// 2 map + reduce
+// 3 reduce
+function despesasTotais(arrNumeros){   
+    return ;
+}
+console.log(despesasTotais([{ }]));
+console.log(despesasTotais([]));
+console.log(despesasTotais([{ nome: "Jornal online", categoria: "Informação", preco: 89.99 }, { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));
+console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99 }, { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }]));
