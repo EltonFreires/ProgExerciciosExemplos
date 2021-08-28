@@ -81,7 +81,7 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); // retornar�
 // Escreva uma função que receba um array de números e retornará a soma de todos os números desse array.
 // 1 solução, foreach
 // 2 solução, reduce
-function somarNumeros(arrNumeros){   
+function somarNumeros(arr){   
     return ;
 }
 console.log(somarNumeros([]));
@@ -93,7 +93,7 @@ console.log(somarNumeros([15, 15, 15, 15])); // retornará 60
 // 1 for of
 // 2 map + reduce
 // 3 reduce
-function despesasTotais(arrNumeros){   
+function despesasTotais(arr){   
     return ;
 }
 console.log(despesasTotais([{ }]));
@@ -105,7 +105,7 @@ console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", pre
 // Criar uma função que receba um array de números e retorne o menor número desse array.
 // 1 solução, reduce
 // 2 solução, Math
-function menorNumero(arrNumeros){
+function menorNumero(arr){
    return ;    
 }
 console.log(menorNumero([10, 5, 35, 65])); // retornará 5
