@@ -46,51 +46,50 @@ function somarNumeros(arrNumeros){
 //     return produtos.reduce((acumulador, value) => acumulador += value.preco,0);
 // }
 
+// 05
+// function menorNumero(arrNumeros){
+//    return arrNumeros.reduce((lowerValue, value) => value < lowerValue ? value : lowerValue);    
+// }
+// function menorNumero(arrNumeros){
+//    return Math.min(arrNumeros);    
+// }
+
 // **************************************************************************************************
-
-
-
+// **************************************************************************************************
+// **************************************************************************************************
 
 // 01
 // Desenvolva uma função que recebe como parâmetro um objeto e retorne um array de arrays, formado pelos pares chave/valor que corresponde a um atributo do objeto. 
-// objetoParaArray({   nome: "Maria", profissao: "Desenvolvedora de software"}) // irá retornar [["nome", "Maria"], ["profissao", "Desenvolvedora de Software"]]
-// objetoParaArray({   codigo: 11111, preco: 12000}) // irá retornar [["codigo", 11111], ["preco", 12000]]
 // 1 solução, fazer com for, e apartir da chave pegar o valor 
 // 2 solução, extrair as chaves, e apartir das chaves pegar o valor 
 // 3 solução, extrair tudo de uma vez
 function objetoParaArray(obj){
     return ;
 };
-console.log(objetoParaArray({ nome: "Maria", profissao: "Desenvolvedora de software" }));
-console.log(objetoParaArray({ codigo: 11111, preco: 12000 })); 
+console.log(objetoParaArray({ nome: "Maria", profissao: "Desenvolvedora de software" }));   // irá retornar [["nome", "Maria"], ["profissao", "Desenvolvedora de Software"]]
+console.log(objetoParaArray({ codigo: 11111, preco: 12000 }));                              // irá retornar [["codigo", 11111], ["preco", 12000]]
 
 // 02
 // Elabore uma função que receba um array de números e retorne um array que tenha todos os números que são pares e que também tenham índices pares.
-// receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]) // retornará []
-// receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]) // retornará [10, 22]
 function receberSomenteOsParesDeIndicesPares(obj){
     return ;
 }
-console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));
-console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43]));
+console.log(receberSomenteOsParesDeIndicesPares([1, 2, 3, 4]));     // retornará []
+console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); // retornará [10, 22]
 
 // 03
 // Escreva uma função que receba um array de números e retornará a soma de todos os números desse array.
-// somarNumeros([10, 10, 10]) // retornará 30
-// somarNumeros([15, 15, 15, 15]) // retornará 60
-// 1 foreach
-// 2 reduce
+// 1 solução, foreach
+// 2 solução, reduce
 function somarNumeros(arrNumeros){   
     return ;
 }
 console.log(somarNumeros([]));
-console.log(somarNumeros([10, 10, 10]));
-console.log(somarNumeros([15, 15, 15, 15]));
+console.log(somarNumeros([10, 10, 10])); // retornará 30
+console.log(somarNumeros([15, 15, 15, 15])); // retornará 60
 
 // 04
 // Crie uma função que receba um array de produtos e retorne o total das despesas.
-// despesasTotais([ {nome: "Jornal online", categoria: "Informação", preco: 89.99},{nome: "Cinema", categoria: "Entretenimento", preco: 150} ]) // retornará 239.99
-// despesasTotais([ {nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99},{nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90} ]) // retornará 34599.89
 // 1 for of
 // 2 map + reduce
 // 3 reduce
@@ -99,5 +98,15 @@ function despesasTotais(arrNumeros){
 }
 console.log(despesasTotais([{ }]));
 console.log(despesasTotais([]));
-console.log(despesasTotais([{ nome: "Jornal online", categoria: "Informação", preco: 89.99 }, { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));
-console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99 }, { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }]));
+console.log(despesasTotais([{ nome: "Jornal online", categoria: "Informação", preco: 89.99 }, { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));        // retornará 239.99
+console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99 }, { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }])); // retornará 34599.89
+
+// 05
+// Criar uma função que receba um array de números e retorne o menor número desse array.
+// 1 solução, reduce
+// 2 solução, Math
+function menorNumero(arrNumeros){
+   return ;    
+}
+console.log(menorNumero([10, 5, 35, 65])); // retornará 5
+console.log(menorNumero([5, -15, 50, 3])); // retornará -15
