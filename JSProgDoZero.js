@@ -313,46 +313,33 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 
 // Para determinar se um ano é bissexto, é necessário saber se ele é multiplo de 4. Não pode ser múltiplo de 100, exceto se for também múltiplo de 400.
 // Com isso em mente, desenvolva uma função que recebe um número correspondente a um ano e retorna se ele é bissexto ou não.
-// Exemplos:
-// checarAnoBissexto(2020) // retornará true
-// checarAnoBissexto(2100) // retornará false, pois é múltiplo de 100 e não é múltiplo de 400
-/* // function checarAnoBissexto(ano){
+// function checarAnoBissexto(ano){
 //     return ano % 4 === 0 && (ano % 100 !== 0 || ano % 400 === 0);
 // }
-function checarAnoBissexto(ano){
-    return new Date(ano, 1,29).getDate() === 29;
-}
-console.log(checarAnoBissexto(2020));
-console.log(checarAnoBissexto(2100)); */
-
+// function checarAnoBissexto(ano){
+//     return new Date(ano, 1,29).getDate() === 29;
+// }
+// console.log(checarAnoBissexto(2020));   // retornará true
+// console.log(checarAnoBissexto(2100));   // retornará false, pois é múltiplo de 100 e não é múltiplo de 400
 
 
 // Escreva uma função que receba um array de números e retornará a soma de todos os números desse array.
-// Exemplos:
-// somarNumeros([10, 10, 10]) // retornará 30
-// somarNumeros([15, 15, 15, 15]) // retornará 60
-/* // function somarNumeros(arrNumeros){
+// function somarNumeros(arrNumeros){
 //     let soma = 0;
 //     arrNumeros.forEach(element => { soma += element});
 //     return soma;
 // }
-function somarNumeros(arrNumeros){
-   
-    return arrNumeros.reduce((soma, value) => soma + value, 0);
-}
-console.log(somarNumeros([10, 10, 10]));
-console.log(somarNumeros([15, 15, 15, 15])); */
+// function somarNumeros(arrNumeros){   
+//     return arrNumeros.reduce((soma, value) => soma + value, 0);
+// }
+// console.log(somarNumeros([10, 10, 10]));        // retornará 30
+// console.log(somarNumeros([15, 15, 15, 15]));    // retornará 60
 
 
 
 /*** Pág 09 ***/
 
 // Crie uma função que receba um array de produtos e retorne o total das despesas.
-// Exemplos:
-// despesasTotais([ {nome: "Jornal online", categoria: "Informação", preco: 89.99},
-//                  {nome: "Cinema", categoria: "Entretenimento", preco: 150} ]) // retornará 239.99
-// despesasTotais([ {nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99},
-//                  {nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90} ]) // retornará 34599.89
 // function despesasTotais(produtos) {
 //     let soma = 0;
 //     for (let obj of produtos) {
@@ -363,15 +350,50 @@ console.log(somarNumeros([15, 15, 15, 15])); */
 // function despesasTotais(produtos){
 //     return produtos.map(item => item.preco).reduce((acumulador, value) => acumulador += value,0);
 // }
-function despesasTotais(produtos){
-    return produtos.reduce((acumulador, value) => acumulador += value.preco,0);
-}
-console.log(despesasTotais([{ nome: "Jornal online", categoria: "Informação", preco: 89.99 }, { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));
-console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99 }, { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }]));
+// function despesasTotais(produtos){
+//     return produtos.reduce((acumulador, value) => acumulador += value.preco,0);
+// }
+// console.log(despesasTotais([{ nome: "Jornal online", categoria: "Informação", preco: 89.99 }, 
+                                // { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));      // retornará 239.99
+// console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99 }, 
+                                // { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }]));  // retornará 34599.89
 
 
 
 /*** Pág 10 ***/
+
+// crie uma função que receba um array com uma quantidade indeterminada de números e retorne a média simples desses números.
+// function calcularMedia(arrNumeros){
+//     if (arrNumeros.length === 0) {return 0;}
+//     return arrNumeros.reduce((acc, value) => acc += value) / arrNumeros.length;    
+// }
+// console.log(calcularMedia([]));
+// console.log(calcularMedia([0, 10])); // retornará 5
+// console.log(calcularMedia([1, 2, 3, 4, 5])); // retornará 3
+
+
+// função que recebe a base e a altura de um triângulo e retorne a área desse triângulo com duas casas decimais.
+// fórmula (base x altura) / 2
+// function areaDoTriangulo(base, altura){
+//     return ((base * altura)/2).toFixed(2);
+// }
+// console.log(areaDoTriangulo(10, 15));       // retornará "75,00"
+// console.log(areaDoTriangulo(7, 9));         // retornará "31,50"
+// console.log(areaDoTriangulo(9.25, 13.1));   // retornará "60.59"
+
+
+// Criar uma função que receba um array de números e retorne o menor número desse array.
+// function menorNumero(arrNumeros){
+//    return arrNumeros.reduce((lowerValue, value) => value < lowerValue ? value : lowerValue);    
+// }
+// function menorNumero(arrNumeros){
+//    return Math.min(arrNumeros);    
+// }
+// console.log(menorNumero([10, 5, 35, 65])); // retornará 5
+// console.log(menorNumero([5, -15, 50, 3])); // retornará -15
+
+
+
 /*** Pág 11 ***/
 /*** Pág 12 ***/
 /*** Pág 13 ***/
@@ -387,61 +409,6 @@ console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", pre
 
 // **************************************************************************************************
 
-// Numa aplicação Web de investimento financeiro da qual você faz parte da equipe de desenvolvimento, pretendese adicionar a funcionalidade de calcular a média de um conjunto de números informados pelo usuário.
-// Com o intuito de realizar esse cálculo, crie uma função que receba um array com uma quantidade indeterminada
-// de números e retorne a média simples desses números.
-// 💡 A média simples é o resultado da soma de todos os números dividido pela quantidade de números.
-// Exemplos:
-// calcularMedia([0, 10]) // retornará 5
-// calcularMedia([1, 2, 3, 4, 5]) // retornará 3
-// Resolução 1
-// function calcularMedia(numeros) {
-// const quantidadeDeNumeros = numeros.length
-// let somaTotal = 0
-// for(numero of numeros) {
-// somaTotal += numero
-// }
-// return somaTotal / quantidadeDeNumeros
-// }
-// Resolução 2
-// function calcularMedia(numeros) {
-// const quantidadeDeNumeros = numeros.length
-// const somaTotal = numeros.reduce((numeroA, numeroB) => numeroA + numeroB)
-// return somaTotal / quantidadeDeNumeros
-// }
-// Faça uma função que recebe a base e a altura de um triângulo e retorne a área desse triângulo. A precisão deverá
-// ser de duas casas decimais, arredondando se necessário.
-// 📕 Obs: a fórmula para calcular a área de um triângulo é (base x altura) / 2
-// Exemplos:
-// areaDoTriangulo(10, 15) // retornará "75,00"
-// areaDoTriangulo(7, 9) // retornará "31,50"
-// areaDoTriangulo(9.25, 13.1) // retornará "60.59"
-// Resolução:
-// function areaDoTriangulo(base, altura) {
-// const area = (base * altura) / 2
-// return area.toFixed(2) // irá arredondar para manter 2 casas decimais
-// }
-// Criar uma função que receba um array de números e retorne o menor número desse array.
-// Exemplos:
-// menorNumero([10, 5, 35, 65]) // retornará 5
-// menorNumero([5, -15, 50, 3]) // retornará -15
-// Resoluções - Exercícios - Curso Fundamentos de Programação 11
-// Resolução 1
-// function menorNumero(numeros) {
-// let menor = numeros[0]
-// for (let i in numeros)
-// if (numeros[i] < menor)
-// menor = numeros[i]
-// return menor
-// }
-// Resolução 2
-// function menorNumero(numeros) {
-// return numeros.reduce((anterior, atual) => anterior < atual ? anterior : atual)
-// }
-// Resolução 3
-// function menorNumero(numeros) {
-// return Math.min(...numeros);
-// }
 // Desenvolva uma função que receba como parâmetro um número de 1 a 10. Internamente, na função, será gerado
 // um número aleatório de 1 a 10. A função deverá retornar se o parâmetro de entrada foi igual ao número sorteado
 // internamente. Se o valor fornecido foi o sorteado, retorne "Parabéns! O número sorteado foi o X". Se não for igual,
