@@ -3,53 +3,38 @@
 
 /*** Pág 01 ***/
 
-// Crie uma função que retorna a string "Olá, " concatenada com um argumento text (a ser passado para a
-// função) e com ponto de exclamação "!" no final.
-// Exemplos:
-// cumprimentar("Leonardo") // retornará "Olá, Leonardo!"
-// cumprimentar("Maria") // retornará "Olá, Maria!"
-/* function cumprimentar(nomePessoa){
-    return `"Olá, ${nomePessoa}!"`;
-}
-console.log(cumprimentar("Leonardo"));
-function cumprimentar2(nomePessoa){
-    const textoSaudacao = "Olá";
-    return [textoSaudacao, nomePessoa].join(', ').concat('!');
-}
-console.log(cumprimentar2("Maria")); */
+// Crie uma função que retorna a string "Olá, " concatenada com um argumento text (a ser passado para a função) e com ponto de exclamação "!" no final.
+// function cumprimentar(nomePessoa){
+//     return `"Olá, ${nomePessoa}!"`;
+// }
+// console.log(cumprimentar("Leonardo"));
+// function cumprimentar2(nomePessoa){
+//     const textoSaudacao = "Olá";
+//     return [textoSaudacao, nomePessoa].join(', ').concat('!');
+// }
+// console.log(cumprimentar2("Maria")); // retornará "Olá, Maria!"
 
 
-
-// Escreva uma função que receba a idade de uma pessoa em anos e retorne a mesma idade em dias.
-// Obs: considere que um ano tem 365 dias. Desconsidere anos bissextos (com 366 dias) e
-// desconsidere também dias decorridos desde o último aniversário.
-// Exemplos:
-// converterIdadeEmAnosParaDias(25) // retornará 9125
-// converterIdadeEmAnosParaDias(70) // retornará 25550
-/* function converterIdadeEmAnosParaDias(idade){
-    const diasPorAno = 365;
-    return (idade * diasPorAno).toFixed(0);
-}
-console.log(converterIdadeEmAnosParaDias(25));
-console.log(converterIdadeEmAnosParaDias(70)); */
-
+// Escreva uma função que receba a idade de uma pessoa em anos e retorne a mesma idade em dias. Obs: considere que um ano tem 365 dias. 
+// function converterIdadeEmAnosParaDias(idade){
+//     const diasPorAno = 365;
+//     return (idade * diasPorAno).toFixed(0);
+// }
+// console.log(converterIdadeEmAnosParaDias(25)); // retornará 9125
+// console.log(converterIdadeEmAnosParaDias(70)); // retornará 25550
 
 
 // Desenvolva uma função que recebe dois parâmetros, um é a quantidade de horas trabalhadas por um funcionário
 // num mês, e o quanto ele recebe por hora. A função deverá calcular o salário líquido mensal do funcionário, que é
-// da quantidade de horas trabalhadas no mês multiplicada pelo valor da sua hora. Desse valor, deve ser subtraído
-// 30%, relativo a impostos.
-// O retorno da função deve ser a string "Salário líquido é igual a R$ X", em que X é o salário líquido do funcionário
-// no mês.
-// Exemplos:
-// calcularSalarioLiquido(180, 60) // retornará "Salário igual a R$ 7560"
-/* function calcularSalarioBruto(horasTrabalhadas, valorHora){
-    return (horasTrabalhadas * valorHora).toFixed(2);
-}
-function calcularSalarioLiquido(horasTrabalhadas, valorHora){
-    return `Salário líquido é igual a R$ ${(calcularSalarioBruto(horasTrabalhadas, valorHora) * 0.7).toFixed(2)}`;
-}
-console.log(calcularSalarioLiquido(180, 60)); */
+// da quantidade de horas trabalhadas no mês multiplicada pelo valor da sua hora. Desse valor, deve ser subtraído 30%, relativo a impostos.
+// O retorno da função deve ser a string "Salário líquido é igual a R$ X", em que X é o salário líquido do funcionário no mês.
+// function calcularSalarioBruto(horasTrabalhadas, valorHora){
+//     return (horasTrabalhadas * valorHora).toFixed(2);
+// }
+// function calcularSalarioLiquido(horasTrabalhadas, valorHora){
+//     return `Salário líquido é igual a R$ ${(calcularSalarioBruto(horasTrabalhadas, valorHora) * 0.7).toFixed(2)}`;
+// }
+// console.log(calcularSalarioLiquido(180, 60)); // retornará "Salário igual a R$ 7560"
 
 
 
@@ -57,10 +42,7 @@ console.log(calcularSalarioLiquido(180, 60)); */
 
 // Crie uma função que recebe um número (de 1 a 12 e retorne o mês correspondente como uma string. Por
 // exemplo, se a entrada for 2, a função deverá retornar "fevereiro", pois este é o 2° mês.
-// Exemplos:
-// receberNomeDoMes(1) // retornará "janeiro"
-// receberNomeDoMes(4) // retornará "abril"
-/* // function receberNomeDoMes(mes) {
+// function receberNomeDoMes(mes) {
 //     switch (mes) {
 //         case 1: return "Janeiro";
 //         case 1: return "Fevereiro";
@@ -70,33 +52,28 @@ console.log(calcularSalarioLiquido(180, 60)); */
 //             break;
 //     }
 // }
-function receberNomeDoMes(mes) {
-    const mesesAno = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'] ;
-    return mesesAno[--mes];
-}
-console.log(receberNomeDoMes(1));
-console.log(receberNomeDoMes(4)); */
-
+// function receberNomeDoMes(mes) {
+//     const mesesAno = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'] ;
+//     return mesesAno[--mes];
+// }
+// console.log(receberNomeDoMes(1)); // retornará "janeiro"
+// console.log(receberNomeDoMes(4)); // retornará "abril"
 
 
 // Crie uma função que receba dois números e retorne se o primeiro é maior ou igual ao segundo. Deverá diferenciar números de strings.
-// Exemplos:
-// maiorOuIgual(0, 0) // retornará true
-// maiorOuIgual(0, "0") // retornará false
-// maiorOuIgual(5, 1) // retornará true
-/* function maiorOuIgual(valor1, valor2){
-    if(typeof valor1 === "string" || typeof valor2 === "string")
-        return false;
-    else if (valor2 > valor1) {
-        return false;
-    } 
-    return true
-}
-console.log(maiorOuIgual(0,0));
-console.log(maiorOuIgual(5,1));
-console.log(maiorOuIgual(2,5));
-console.log(maiorOuIgual(0,"0"));
-console.log(maiorOuIgual("0",0)); */
+// function maiorOuIgual(valor1, valor2){
+//     if(typeof valor1 === "string" || typeof valor2 === "string")
+//         return false;
+//     else if (valor2 > valor1) {
+//         return false;
+//     } 
+//     return true
+// }
+// console.log(maiorOuIgual(0,0)); // retornará true
+// console.log(maiorOuIgual(5,1)); // retornará true
+// console.log(maiorOuIgual(2,5));
+// console.log(maiorOuIgual(0,"0")); // retornará false
+// console.log(maiorOuIgual("0",0));
 
 
 
@@ -354,9 +331,9 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 //     return produtos.reduce((acumulador, value) => acumulador += value.preco,0);
 // }
 // console.log(despesasTotais([{ nome: "Jornal online", categoria: "Informação", preco: 89.99 }, 
-                                // { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));      // retornará 239.99
+// { nome: "Cinema", categoria: "Entretenimento", preco: 150 }]));      // retornará 239.99
 // console.log(despesasTotais([{ nome: "Galaxy S20", categoria: "Eletrônicos", preco: 3599.99 }, 
-                                // { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }]));  // retornará 34599.89
+// { nome: "Macbook Pro", categoria: "Eletrônicos", preco: 30999.90 }]));  // retornará 34599.89
 
 
 
@@ -395,51 +372,32 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 
 
 /*** Pág 11 ***/
+
+// Desenvolva uma função que receba como parâmetro um número de 1 a 10, gere um número aleatório de 1 a 10, e compare. 
+// ==, retorne "Parabéns! O número sorteado foi o X". 
+// !=, "Que pena! O número sorteado foi o X". 
+// function funcaoDaSorte(num) {
+//     const valorMin = 20;
+//     const valorMax = 30;
+//     let random = Math.floor(Math.random() * (valorMax - valorMin + 1) + valorMin);
+//     return (num === random) ? `Parabéns! O número sorteado foi o ${random}` : `Que pena! O número sorteado foi o ${random}`;
+// }
+// console.log(funcaoDaSorte(30)); // "Parabéns! O número sorteado foi o x" 
+// console.log(funcaoDaSorte(20)); // "Que pena! O número sorteado foi o x"
+// console.log(funcaoDaSorte(25)); 
+
+
+// Criar uma função que receba uma string como parâmetro e conte quantas palavras tem nela. Considere que todas as palavras só são separadas por um espaço.
+// function contarPalavras(text){    
+//     return text.split(" ").length;
+// }
+// console.log(contarPalavras("Sou uma frase")); // retornará 3
+// console.log(contarPalavras("Me divirto aprendendo a programar")); // retornará 5
+
+
+
 /*** Pág 12 ***/
-/*** Pág 13 ***/
-/*** Pág 14 ***/
-/*** Pág 15 ***/
 
-// **************************************************************************************************
-
-
-
-
-
-
-// **************************************************************************************************
-
-// Desenvolva uma função que receba como parâmetro um número de 1 a 10. Internamente, na função, será gerado
-// um número aleatório de 1 a 10. A função deverá retornar se o parâmetro de entrada foi igual ao número sorteado
-// internamente. Se o valor fornecido foi o sorteado, retorne "Parabéns! O número sorteado foi o X". Se não for igual,
-// retorne "Que pena! O número sorteado foi o X". X é o número que foi sorteado.
-// Exemplos:
-// funcaoDaSorte(10) // retornará "Parabéns! O número sorteado foi o 10"
-// funcaoDaSorte(5) // retornará "Que pena! O número sorteado foi o 3"
-// funcaoDaSorte(5) // retornará "Que pena! O número sorteado foi o 1"
-// Resolução:
-// /*mais informações sobre gerar números aleatórios dentro de uma certa faixa
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random */
-// function funcaoDaSorte(numeroEscolhido) {
-// const min = 1
-// const max = 10
-// const numeroAleatorio = Math.floor(Math.random() * (max - min + 1) + min)
-// return (numeroEscolhido === numeroAleatorio ?
-// `Parabéns! O número sorteado foi o ${numeroAleatorio}` :
-// `Que pena, o número sorteado foi o ${numeroAleatorio}`
-// )
-// }
-// Criar uma função que receba uma string como parâmetro e conte quantas palavras tem nela.
-// 📕 Considere que todas as palavras só são separadas por um espaço.
-// Exemplos:
-// contarPalavras("Sou uma frase") // retornará 3
-// contarPalavras("Me divirto aprendendo a programar") // retornará 5
-// Resolução:
-// function contarPalavras(frase){
-// const palavras = frase.split(" ")
-// Resoluções - Exercícios - Curso Fundamentos de Programação 12
-// return palavras.length
-// }
 // Desenvolva uma função que recebe um caractere e uma string como parâmetros e retorne a quantidade de vezes
 // que o caractere se repete na string. A função deverá ser case-sensitive, ou seja, irá diferenciar maiúsculas de
 // minúsculas.
@@ -493,6 +451,11 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 // function removerVogais(frase) {
 // return frase.replace(/[aeiou]/ig, '')
 // }
+
+
+
+/*** Pág 13 ***/
+
 // Desenvolva uma função que recebe um objeto como parâmetro e retorne um outro objeto que corresponde ao ao
 // objeto recebido como parâmetro, porém com as posições das chaves e valores invertidas, conforme exemplo a
 // seguir:
@@ -538,6 +501,11 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 // return quantidadeDeDigitos === quantidadeDesejada
 // })
 // }
+
+
+
+/*** Pág 14 ***/
+
 // Crie uma função que recebe um array de números e retorna o segundo maior número presente nesse array.
 // Exemplos:
 // segundoMaior([12, 16, 1, 5]) // retornará 12
@@ -594,3 +562,4 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 // const melhorEstudante = estudantesOrdenados[0]
 // return melhorEstudante
 // }
+
