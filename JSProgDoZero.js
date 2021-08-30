@@ -388,31 +388,15 @@ console.log(receberSomenteOsParesDeIndicesPares([10, 70, 22, 43])); */
 
 
 // Criar uma função que receba uma string como parâmetro e conte quantas palavras tem nela. Considere que todas as palavras só são separadas por um espaço.
-// contarPalavras("Sou uma frase") // retornará 3
-// contarPalavras("Me divirto aprendendo a programar") // retornará 5
-
-
-
-
-
-
-
-
-
-
-
-
-// Resolução:
-// function contarPalavras(frase){
-// const palavras = frase.split(" ")
-// Resoluções - Exercícios - Curso Fundamentos de Programação 12
-// return palavras.length
+// function contarPalavras(text){    
+//     return text.split(" ").length;
 // }
+// console.log(contarPalavras("Sou uma frase")); // retornará 3
+// console.log(contarPalavras("Me divirto aprendendo a programar")); // retornará 5
 
 
 
 /*** Pág 12 ***/
-
 
 // Desenvolva uma função que recebe um caractere e uma string como parâmetros e retorne a quantidade de vezes
 // que o caractere se repete na string. A função deverá ser case-sensitive, ou seja, irá diferenciar maiúsculas de
