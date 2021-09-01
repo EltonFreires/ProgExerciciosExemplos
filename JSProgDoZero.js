@@ -368,51 +368,25 @@
 /*** Pág 13 ***/
 
 // Desenvolva uma função que recebe um objeto como parâmetro e retorne um outro objeto que corresponde ao ao
-// objeto recebido como parâmetro, porém com as posições das chaves e valores invertidas, conforme exemplo a
-// seguir:
-// Exemplo:
-// inverter({ a: 1, b: 2, c: 3}) // retornará { 1: "a", 2: "b", 3: "c"}
-// Resolução 1
-// function inverter(objeto) {
-// const objetoInvertido = {}
-// Object.entries(objeto).forEach( parChaveValor => {
-// const chave = 0,
-// valor = 1
-// objetoInvertido[ parChaveValor[valor] ] = parChaveValor[chave]
-// })
-// return objetoInvertido
+// objeto recebido como parâmetro, porém com as posições das chaves e valores invertidas
+// function inverter(obj) {
+//     // var ret = {};
+//     // for(var key in json){ ret[json[key]] = key; }
+//     // return ret;
+//     return Object.fromEntries(Object.entries(obj).map(a => a.reverse()));
+//     return Object.fromEntries(Object.entries(obj).map(([k, v]) => [v, k]));
+//     return Object.assign({}, ...Object.entries(obj).map(([a, b]) => ({ [b]: a })));
 // }
-// Resolução 2
-// function inverter(objeto) {
-// const paresDeChaveValorInvertidos = Object.entries(objeto)
-// .map( parChaveValor => parChaveValor.reverse() )
-// return Object.fromEntries(paresDeChaveValorInvertidos)
-// }
-// Elabore uma função que recebe dois parâmetros: o primeiro é um array de números e o segundo é um número
-// que especifica uma quantidade de dígitos. Essa função deverá retornar somente aqueles números do array que
-// têm a quantidade de dígitos indicada pelo segundo parâmetro.
-// Exemplos:
-// filtrarPorQuantidadeDeDigitos([38, 2, 365, 10, 125, 11], 2) // retornará [38, 10, 11]
-// filtrarPorQuantidadeDeDigitos([5, 9, 1, 125, 11], 1) // retornará [5, 9, 1]
-// Resolução 1
-// function filtrarPorQuantidadeDeDigitos(numeros, quantidadeDesejada) {
-// let resultado = []
-// Resoluções - Exercícios - Curso Fundamentos de Programação 14
-// for(numero of numeros){
-// const quantidadeDeDigitos = String(numero).length
-// if(quantidadeDeDigitos === quantidadeDesejada)
-// resultado.push(numero)
-// }
-// return resultado
-// }
-// Resolução 2
-// function filtrarPorQuantidadeDeDigitos(numeros, quantidadeDesejada) {
-// return numeros.filter(numero => {
-// const quantidadeDeDigitos = String(numero).length
-// return quantidadeDeDigitos === quantidadeDesejada
-// })
-// }
+// console.log(inverter({ a: 1, b: 2, c: 3 })); // retornará { 1: "a", 2: "b", 3: "c"}
 
+
+// Elabore uma função que o primeiro é um array de números e o segundo é um número que especifica uma quantidade de dígitos. 
+// Essa função deverá retornar somente aqueles números do array que têm a quantidade de dígitos indicada pelo segundo parâmetro.
+// function filtrarPorQuantidadeDeDigitos(arr, num) {
+//     return arr.filter(value => String(value).length === num);
+// }
+// console.log(filtrarPorQuantidadeDeDigitos([38, 2, 365, 10, 125, 11], 2)); // retornará [38, 10, 11]
+// console.log(filtrarPorQuantidadeDeDigitos([5, 9, 1, 125, 11], 1)); // retornará [5, 9, 1]
 
 
 /*** Pág 14 ***/
@@ -421,6 +395,7 @@
 // Exemplos:
 // segundoMaior([12, 16, 1, 5]) // retornará 12
 // segundoMaior([8, 4, 5, 6]) // retornará 6
+
 // Resolução 1
 // function segundoMaior(numeros) {
 // let indiceDoMaior = 0
@@ -450,6 +425,8 @@
 // const segundoMaior = numerosOrdenados[1]
 // return segundoMaior
 // }
+
+
 // Elabore uma função que recebe um objeto com estudantes e suas notas. As notas de cada estudante estarão num
 // array, conforme exemplo abaixo. Você deverá calcular a média da nota de cada aluno e retornar um objeto com
 // Resoluções - Exercícios - Curso Fundamentos de Programação 15
@@ -460,6 +437,7 @@
 // Mariana: [9, 6.6, 7.9, 8], // média 7.875
 // Carla: [7, 7, 8, 9] // média 7.75
 // }) // retornará { nome: "Mariana", media: 7.875 }
+
 // Resolução:
 // const soma = array => array.reduce((acumulador, atual) => acumulador + atual, 0)
 // const media = array => soma(array) / array.length
