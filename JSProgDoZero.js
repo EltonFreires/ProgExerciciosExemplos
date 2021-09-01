@@ -392,63 +392,37 @@
 /*** Pág 14 ***/
 
 // Crie uma função que recebe um array de números e retorna o segundo maior número presente nesse array.
-// Exemplos:
-// segundoMaior([12, 16, 1, 5]) // retornará 12
-// segundoMaior([8, 4, 5, 6]) // retornará 6
-
-// Resolução 1
-// function segundoMaior(numeros) {
-// let indiceDoMaior = 0
-// let segundoMaior
-// numeros.forEach( (numero, indice) => {
-// if( numero > numeros[indiceDoMaior] )
-// indiceDoMaior = indice
-// })
-// numeros.splice(indiceDoMaior, 1)
-// segundoMaior = numeros[0]
-// numeros.forEach(numero => {
-// if(numero > segundoMaior)
-// segundoMaior = numero
-// })
-// return segundoMaior
+// function segundoMaior(arr) {
+//     // let arrNew = Array.from(arr.filter(value => value !== Math.max(...arr)));
+//     // return Math.max(...arrNew);
+//     let arrNew = Array.from(arr.sort((n1, n2) => n2 - n1));
+//     console.log(arrNew);
+//     return arrNew[1];
 // }
-// Resolução 2
-// function segundoMaior(numeros) {
-// const maiorNumero = Math.max(...numeros)
-// numeros = numeros.filter(numero => numero != maiorNumero)
-// const segundoMaior = Math.max(...numeros)
-// return segundoMaior
-// }
-// Resolução 3
-// function segundoMaior(numeros) {
-// const numerosOrdenados = numeros.sort((numeroA, numeroB) => numeroB - numeroA)
-// const segundoMaior = numerosOrdenados[1]
-// return segundoMaior
-// }
+// console.log(segundoMaior([12, 16, 1, 5])); // retornará 12
+// console.log(segundoMaior([8, 4, 5, 6])); // retornará 6
 
-
-// Elabore uma função que recebe um objeto com estudantes e suas notas. As notas de cada estudante estarão num
-// array, conforme exemplo abaixo. Você deverá calcular a média da nota de cada aluno e retornar um objeto com
-// Resoluções - Exercícios - Curso Fundamentos de Programação 15
+// Elabore uma função que recebe um objeto com estudantes e suas notas. As notas de cada estudante estarão num array. 
+// Você deverá calcular a média da nota de cada aluno e retornar um objeto com
 // os atributos nome e media, que indica o aluno que teve o melhor desempenho nas notas.
-// Exemplo:
-// recerberMelhorEstudante({
-// Joao: [8, 7.6, 8.9, 6], // média 7.625
-// Mariana: [9, 6.6, 7.9, 8], // média 7.875
-// Carla: [7, 7, 8, 9] // média 7.75
-// }) // retornará { nome: "Mariana", media: 7.875 }
+// function recerberMelhorEstudante(alunos) {
+//     let awg = -1;
+//     let aluno;
+//     let calculetedAwg;
 
-// Resolução:
-// const soma = array => array.reduce((acumulador, atual) => acumulador + atual, 0)
-// const media = array => soma(array) / array.length
-// function recerberMelhorEstudante(estudantes) {
-// const estudantesComMedias = Object.entries(estudantes).map( estudante => {
-// const chave = 0,
-// valor = 1
-// return { nome: estudante[chave], media: media(estudante[valor]) }
-// })
-// const estudantesOrdenados = estudantesComMedias.sort( (estudanteA, estudanteB) => estudanteB.media - estudanteA.media )
-// const melhorEstudante = estudantesOrdenados[0]
-// return melhorEstudante
+//     for (let key in alunos) {
+//         calculetedAwg = (alunos[key].reduce((acc, value) => acc += value)) / alunos[key].length;
+//         if (calculetedAwg > awg) {
+//             awg = calculetedAwg;
+//             aluno = key;
+//         }
+//     }
+//     return { nome: aluno, media: awg };
 // }
+// console.log(recerberMelhorEstudante({
+//     Joao: [8, 7.6, 8.9, 6], // média 7.625
+//     Mariana: [9, 6.6, 7.9, 8], // média 7.875
+//     Carla: [7, 7, 8, 9] // média 7.75
+// })); // retornará { nome: "Mariana", media: 7.875 }
+
 
